@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 2022w29
+description: librephotos helm package
+name: librephotos
+version: 0.1.1
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - librephotos
+home: https://github.com/LibrePhotos
+icon: https://docs.librephotos.com/assets/images/site-logo.png
+sources:
+  - https://github.com/librephotos/librephotos-docker
+maintainers:
+  - name: lucacalcaterra
+    email: calcaterra.luca@gmail.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
