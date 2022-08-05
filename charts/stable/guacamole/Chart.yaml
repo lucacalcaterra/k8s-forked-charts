@@ -1,0 +1,23 @@
+apiVersion: v2
+appVersion: 1.0.0
+description: guacamole helm package
+name: guacamole
+version: 1.2.2
+kubeVersion: ">=1.16.0-0"
+keywords:
+  - guacamole
+home: https://github.com/k8s-at-home/charts/tree/master/charts/stable/guacamole
+icon: https://guacamole.org/icon
+sources:
+  - https://github.com/guacamole/guacamole-docker
+maintainers:
+  - name: guacamole
+    email: guacamole@guacamole.com
+dependencies:
+  - name: common
+    repository: https://library-charts.k8s-at-home.com
+    version: 4.5.2
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial version
